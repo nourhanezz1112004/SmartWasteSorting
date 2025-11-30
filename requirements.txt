@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+tensorflow>=2.8
+opencv-python
+Pillow
+customtkinter
+imutils
+joblib
