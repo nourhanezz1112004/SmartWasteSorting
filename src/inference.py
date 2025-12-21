@@ -26,7 +26,8 @@ def predict(frame):
     x = preprocess_image(frame)
     probs = _model.predict(x)[0]
     if _class_indices:
-        labels = list(_class_indices.keys())
+        labels = [k for k, v in sorted(_class_indices.items(), key=lambda x: x[1])]
+
     else:
         # numeric labels
         labels = [str(i) for i in range(len(probs))]
