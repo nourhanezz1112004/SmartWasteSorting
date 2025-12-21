@@ -173,7 +173,7 @@ class App(ctk.CTk):
             self.pred_label.configure(text=f"Prediction: {label} ({prob:.2f})")
 
         if self.camera_worker and self.camera_worker.running:
-            self.after(30, self.update_video)
+            self.after(20, self.update_video)
 
     def start_camera(self):
         if self.camera_worker and self.camera_worker.running:
