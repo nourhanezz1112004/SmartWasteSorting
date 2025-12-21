@@ -13,8 +13,8 @@ def load(wpath, class_indices=None):
     _model = load_model(wpath)
     _class_indices = class_indices
 
-def preprocess_image(frame, target_size=(224,224)):
-    # frame is a BGR OpenCV image
+def preprocess_image(frame, target_size=(160,160)):
+ # frame is a BGR OpenCV image
     img = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     img = cv2.resize(img, target_size)
     img = img.astype('float32') / 255.0
