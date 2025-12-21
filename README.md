@@ -3,22 +3,27 @@
 ## Project Idea
 
 **Description:**
-The *Smart Waste Sorting System (Python GUI Simulation)* is a software-based project that simulates how smart waste sorting works — without hardware.
-It uses Python logic and a graphical user interface (GUI) to classify user-input items (like “bottle”, “banana peel”, “can”) into categories such as plastic, metal, organic, or paper.
-The project aims to raise awareness about automated waste management while demonstrating fundamental AI-inspired decision systems.
-Target users include students, environmental researchers, and smart city education programs.
-Expected outcomes include a clean, interactive interface and accurate text-based waste classification.
+The *Smart Waste Sorting System (Python GUI Simulation)* is a vision-based software prototype
+that demonstrates how automated waste sorting systems operate using computer vision concepts.
+The system uses a real-time camera feed to capture images of waste items, extracts visual
+features from each frame, and classifies the waste into categories such as plastic, metal,
+organic, or paper.
+
+This project focuses on demonstrating the **AI workflow** used in smart environmental systems
+without relying on physical hardware or industrial sensors.
+It is designed for educational purposes and smart city awareness applications.
 
 **Objectives:**
-
-* Design a simple, interactive GUI using Python only (no hardware).
-* Implement a logic-based waste classifier that detects item type from user input.
-* Display real-time feedback through the interface.
-* Educate users on proper waste segregation.
+* Design an advanced, interactive GUI using Python.
+* Integrate a real-time camera feed using OpenCV.
+* Extract visual features from captured frames.
+* Perform rule-based classification as a foundation for AI systems.
+* Demonstrate the inference pipeline used in computer vision applications.
 
 **Scope:**
-**In Scope:** GUI design, logic-based classification, educational demo, and documentation.
-**Out of Scope:** Any physical hardware, camera input, or machine learning integration.
+**In Scope:** GUI design, camera integration, feature extraction, AI-inspired classification,
+real-time processing, and documentation.  
+**Out of Scope:** Industrial hardware integration and large-scale deployment.
 
 ---
 
@@ -26,63 +31,72 @@ Expected outcomes include a clean, interactive interface and accurate text-based
 
 | Team Member    | GitHub Account     | Role                           | Responsibilities                                          |
 | -------------- | ------------------ | ------------------------------ | --------------------------------------------------------- |
-| Yasmin Mohamed | @yasminelrefaei    | Project Lead / Developer       | Interface design, GUI coding, and project structure setup |
-| Norhan Mohamed | @nourhanezz1112004 | Developer / Documentation Lead | Logic implementation, testing, and final documentation    |
+| Yasmin Mohamed | @yasminelrefaei    | Project Lead / Developer       | GUI design, system architecture, and camera integration   |
+| Norhan Mohamed | @nourhanezz1112004 | AI & Documentation Developer   | Feature extraction logic, classification design, testing, and documentation |
 
 ---
 
 ## Tools and Usage
 
-| Tool/Library            | Purpose         | Usage Details                                   |
-| ----------------------- | --------------- | ----------------------------------------------- |
-| Python                  | Core language   | Used for all coding and GUI logic               |
-| tkinter / customtkinter | GUI library     | Builds the interactive window and buttons       |
-| Pillow (PIL)            | Image support   | Displays icons or images inside the interface   |
-| GitHub                  | Version control | Stores and tracks project files                 |
-| VS Code / PyCharm       | IDE             | Used for coding, debugging, and testing the GUI |
+| Tool/Library            | Purpose                 | Usage Details                                              |
+| ----------------------- | ----------------------- | ---------------------------------------------------------- |
+| Python                  | Core language           | Implements system logic and application workflow           |
+| CustomTkinter           | GUI framework           | Builds the advanced interactive user interface             |
+| OpenCV                  | Computer vision library | Captures and processes real-time camera frames             |
+| NumPy                   | Numerical processing    | Handles image feature calculations                         |
+| Pillow (PIL)            | Image handling          | Converts frames for GUI display                            |
+| GitHub                  | Version control         | Manages project versions and collaboration                 |
+| VS Code / PyCharm       | IDE                     | Used for development, debugging, and testing               |
 
 ---
 
 ## 4-Week Plan
 
-### Week 1: Planning and Setup
-
-* **Milestones:** Define project structure, decide GUI layout, and assign roles.
-* **Deliverables:** Basic app window setup with tkinter/customtkinter.
+### Week 1: Planning and System Design
+* **Milestones:** Define project architecture, camera workflow, and GUI layout.
+* **Deliverables:** Initial GUI layout and module structure.
 * **Assigned:** Yasmin.
 
-### Week 2: Development Phase 1
-
-* **Milestones:** Implement user input field and classification logic.
-* **Deliverables:** Functional prototype for classifying waste items.
+### Week 2: Vision & Feature Extraction
+* **Milestones:** Integrate camera feed and extract visual features from frames.
+* **Deliverables:** Functional camera module with feature extraction.
 * **Assigned:** Norhan.
 
-### Week 3: Development Phase 2 and Testing
-
-* **Milestones:** Add design improvements, colors, and testing scenarios.
-* **Deliverables:** Stable GUI with working output and reset functionality.
+### Week 3: Classification & Integration
+* **Milestones:** Implement rule-based classification and connect it to the GUI.
+* **Deliverables:** Real-time classification results displayed in the interface.
 * **Assigned:** Yasmin & Norhan.
 
-### Week 4: Finalization and Presentation
-
-* **Milestones:** Final interface polish, bug fixes, and presentation preparation.
-* **Deliverables:** Final app version, README.md, and presentation slides.
+### Week 4: Testing and Finalization
+* **Milestones:** Optimize performance, handle runtime errors, and finalize documentation.
+* **Deliverables:** Stable application and final README.
 * **Assigned:** Yasmin & Norhan.
 
-**Overall Timeline Notes:**
-Final testing and presentation demo will be completed by the end of Week 4.
+**Overall Timeline Notes:**  
+The final system demonstrates a complete vision-based AI workflow suitable for academic evaluation.
 
 ---
 
 ### Checklist for detailed tasks
 
-* [ ] Design main GUI layout (buttons, input field, labels)
-* [ ] Implement classification logic for waste types
-* [ ] Add reset and about buttons
-* [ ] Test the interface for multiple inputs
-* [ ] Prepare presentation and project documentation
+* [x] Design advanced GUI layout
+* [x] Implement real-time camera integration
+* [x] Extract visual features from frames
+* [x] Apply AI-inspired classification logic
+* [x] Display real-time prediction results
+* [x] Test system stability
+* [x] Prepare final documentation
 
 ---
+
+## Evaluation Criteria
+
+* **Success Metrics:** Real-time camera operation, correct GUI interaction,
+clear classification output, and well-structured system design.
+* **Feedback:** Instructor review based on functionality, architecture, and AI concepts.
+* **Next Steps:** Integrate deep learning models (CNN) for higher accuracy
+and dataset-based training in future versions.
+
 
 ## Evaluation Criteria
 
